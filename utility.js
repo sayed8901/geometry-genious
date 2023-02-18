@@ -91,6 +91,7 @@ function areaCalculator3(input1, input2){
 let color = [, "#3C9EE7", "#E7993C", 
 "#E73C99", "#3CE746", "#E7993C"];
 
+// applying random colors on each card
 const myCards = document.querySelectorAll('.card');
 for (const myCard of myCards){
     myCard.addEventListener('mouseenter', function(){
