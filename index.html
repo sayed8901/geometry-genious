@@ -26,9 +26,7 @@
     <main class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 py-2">
 
         <!-- cards -->
-
-        <div class="sm:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 py-2">
-
+        <div class="sm:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-2 py-2">
             <!-- Triangle -->
             <div class="card border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
                 <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/triangle.png" alt="">
@@ -46,9 +44,9 @@
                     <p class="self-center mr-2">cm</p>
                     <button 
                     onclick="updateFormulaText('triangle-formula-text-1', 'triangle-input-1', 'triangle-formula-text-2', 'triangle-input-2')"
-                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                    ><i class="fa-regular fa-square-check self-center text-2xl" title="You can set these input value to the formula line by clicking on this icon."></i></button>
                 </div>
-                <button id="calculate-triangle-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+                <button id="calculate-triangle-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium" title="Dont forget to click the edit icon beside the formula line first to active the input field!">Calculate</button>
             </div>
 
             <!-- Rectangle -->
@@ -68,9 +66,9 @@
                     <p class="self-center mr-2">cm</p>
                     <button 
                     onclick="updateFormulaText('rectangle-formula-text-1', 'rectangle-input-1', 'rectangle-formula-text-2', 'rectangle-input-2')"
-                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                    ><i class="fa-regular fa-square-check self-center text-2xl" title="You can set these input value to the formula line by clicking on this icon."></i></button>
                 </div>
-                <button id="calculate-rectangle-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+                <button id="calculate-rectangle-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium" title="Dont forget to click the edit icon beside the formula line first to active the input field!">Calculate</button>
             </div>
 
             <!-- Parallelogram -->
@@ -90,9 +88,9 @@
                     <p class="self-center mr-2">cm</p>
                     <button 
                     onclick="updateFormulaText('parallelogram-formula-text-1', 'parallelogram-input-1', 'parallelogram-formula-text-2', 'parallelogram-input-2')"
-                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                    ><i class="fa-regular fa-square-check self-center text-2xl" title="You can set these input value to the formula line by clicking on this icon."></i></button>
                 </div>
-                <button id="calculate-parallelogram-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+                <button id="calculate-parallelogram-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium" title="Dont forget to click the edit icon beside the formula line first to active the input field!">Calculate</button>
             </div>
 
             <!-- Rhombus -->
@@ -112,9 +110,9 @@
                     <p class="self-center mr-2">cm</p>
                     <button 
                     onclick="updateFormulaText('rhombus-formula-text-1', 'rhombus-input-1', 'rhombus-formula-text-2', 'rhombus-input-2')"
-                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                    ><i class="fa-regular fa-square-check self-center text-2xl" title="You can set these input value to the formula line by clicking on this icon."></i></button>
                 </div>
-                <button id="calculate-rhombus-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+                <button id="calculate-rhombus-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium" title="Dont forget to click the edit icon beside the formula line first to active the input field!">Calculate</button>
             </div>
 
             <!-- Pentagon -->
@@ -134,14 +132,14 @@
                     <p class="self-center mr-2">cm</p>
                     <button 
                     onclick="updateFormulaText('pentagon-formula-text-1', 'pentagon-input-1', 'pentagon-formula-text-2', 'pentagon-input-2')"
-                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                    ><i class="fa-regular fa-square-check self-center text-2xl" title="You can set these input value to the formula line by clicking on this icon."></i></button>
                 </div>
-                <button id="calculate-pentagon-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+                <button id="calculate-pentagon-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium" title="Dont forget to click the edit icon beside the formula line first to active the input field!">Calculate</button>
             </div>
 
             <!-- Ellipsis -->
             <div class="card border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
-                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/triangle.png" alt="">
+                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/ellipse.png" alt="">
                 <h3 class="text-xl font-extrabold">Ellipsis</h3>
                 <div>
                     <p class="inline mr-2">Area (A) = <span class="text-xl">π</span>
@@ -156,14 +154,14 @@
                     <p class="self-center mr-2">cm</p>
                     <button 
                     onclick="updateFormulaText('ellipsis-formula-text-1', 'ellipsis-input-1', 'ellipsis-formula-text-2', 'ellipsis-input-2')"
-                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                    ><i class="fa-regular fa-square-check self-center text-2xl" title="You can set these input value to the formula line by clicking on this icon."></i></button>
                 </div>
-                <button id="calculate-ellipsis-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+                <button id="calculate-ellipsis-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium" title="Dont forget to click the edit icon beside the formula line first to active the input field!">Calculate</button>
             </div>
         </div>
             
         <!-- calculation side -->
-        <aside id="container" class="border shadow-xl text-center px-4 py-8 rounded-lg mt-2 sm:mx-0 mx-auto h-3/4">
+        <aside id="container" class="border shadow-xl text-center px-4 py-8 rounded-lg mt-2 sm:mx-0 mx-auto h-5/6">
             <h3 class="text-xl font-extrabold underline mb-4">Area Calculation</h3>
 
             <!-- demo list created for appending purpose -->

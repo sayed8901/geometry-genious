@@ -1,13 +1,13 @@
-// function: to get text from input field
-function getTextFromInputField(id){
-    const value = document.getElementById(id).innerText;
+// function: to get value from input field
+function getValueFromInputField(id){
+    const value = document.getElementById(id).value;
     const valueInNumber = parseFloat(value);
     return valueInNumber;
 }
 
-// function: to get value from input field
-function getValueFromInputField(id){
-    const value = document.getElementById(id).value;
+// function: to get text from input field
+function getTextFromInputField(id){
+    const value = document.getElementById(id).innerText;
     const valueInNumber = parseFloat(value);
     return valueInNumber;
 }
@@ -85,7 +85,6 @@ function areaCalculator3(input1, input2){
         return areaResult;
     }
 }
-
 
 // creating random colors
 let color = [, "#3C9EE7", "#E7993C", 
