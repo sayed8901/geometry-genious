@@ -27,7 +27,12 @@ document.getElementById('calculate-triangle-area').addEventListener('click', fun
         </div>
     `;
     // appending it to the parent container
-    parent.appendChild(newDiv);
+    if(triangleArea >= 0){
+        parent.appendChild(newDiv);
+    }
+    else{
+        alert('Please input carefully!!');
+    }
 
     // to delete newly appended data
     const deleteItems = document.querySelectorAll('.delete-btn');
@@ -67,7 +72,12 @@ document.getElementById('calculate-rectangle-area').addEventListener('click', fu
         </div>
     `;
     // appending it to the parent container
-    parent.appendChild(newDiv);
+    if(rectangleArea >= 0){
+        parent.appendChild(newDiv);
+    }
+    else{
+        alert('Please input carefully!!');
+    }
 
     // to delete newly appended data
     const deleteItems = document.querySelectorAll('.delete-btn');
@@ -107,7 +117,12 @@ document.getElementById('calculate-parallelogram-area').addEventListener('click'
         </div>
     `;
     // appending it to the parent container
-    parent.appendChild(newDiv);
+    if(parallelogramArea >= 0){
+        parent.appendChild(newDiv);
+    }
+    else{
+        alert('Please input carefully!!');
+    }
 
     // to delete newly appended data
     const deleteItems = document.querySelectorAll('.delete-btn');
@@ -147,7 +162,12 @@ document.getElementById('calculate-rhombus-area').addEventListener('click', func
         </div>
     `;
     // appending it to the parent container
-    parent.appendChild(newDiv);
+    if(rhombusArea >= 0){
+        parent.appendChild(newDiv);
+    }
+    else{
+        alert('Please input carefully!!');
+    }
 
     // to delete newly appended data
     const deleteItems = document.querySelectorAll('.delete-btn');
@@ -187,7 +207,12 @@ document.getElementById('calculate-pentagon-area').addEventListener('click', fun
         </div>
     `;
     // appending it to the parent container
-    parent.appendChild(newDiv);
+    if(pentagonArea >= 0){
+        parent.appendChild(newDiv);
+    }
+    else{
+        alert('Please input carefully!!');
+    }
 
     // to delete newly appended data
     const deleteItems = document.querySelectorAll('.delete-btn');
@@ -227,7 +252,12 @@ document.getElementById('calculate-ellipsis-area').addEventListener('click', fun
         </div>
     `;
     // appending it to the parent container
-    parent.appendChild(newDiv);
+    if(ellipsisArea >= 0){
+        parent.appendChild(newDiv);
+    }
+    else{
+        alert('Please input carefully!!');
+    }
 
     // to delete newly appended data
     const deleteItems = document.querySelectorAll('.delete-btn');

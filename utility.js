@@ -1,13 +1,15 @@
 // function: to get text from input field
 function getTextFromInputField(id){
     const value = document.getElementById(id).innerText;
-    return value;
+    const valueInNumber = parseFloat(value);
+    return valueInNumber;
 }
 
 // function: to get value from input field
 function getValueFromInputField(id){
-    const value = parseFloat(document.getElementById(id).value).toFixed(2);
-    return value;
+    const value = document.getElementById(id).value;
+    const valueInNumber = parseFloat(value);
+    return valueInNumber;
 }
 
 // function: to set value to a field
@@ -33,15 +35,25 @@ function updateFormulaText(formulaTextFieldId1, inputFieldId1, formulaTextFieldI
 function areaCalculator1(input1, input2){
     const inputValue1 = getValueFromInputField(input1);
     const inputValue2 = getValueFromInputField(input2);
-    const areaResult = 0.5 * inputValue1 * inputValue2;
-    return areaResult;
+    const areaResult = parseFloat(0.5 * inputValue1 * inputValue2).toFixed(2);
+
+    // data validation
+    if(isNaN(inputValue1) || isNaN(inputValue2)){
+        alert('You can only input in number format.')
+    }
+    else if(inputValue1 <= 0 || inputValue2 <= 0){
+        alert('Negative values are not allowed! You should input more than 0 here.')
+    }
+    else{
+        return areaResult;
+    }
 }
 
 // function: to calculate the area for rectangle or parallelogram
 function areaCalculator2(input1, input2){
     const inputValue1 = getValueFromInputField(input1);
     const inputValue2 = getValueFromInputField(input2);
-    const areaResult = inputValue1 * inputValue2;
+    const areaResult = parseFloat(inputValue1 * inputValue2).toFixed(2);
     return areaResult;
 }
 
@@ -50,6 +62,6 @@ function areaCalculator3(input1, input2){
     const inputValue1 = getValueFromInputField(input1);
     const inputValue2 = getValueFromInputField(input2);
     const pie = Math.PI.toFixed(2);
-    const areaResult = pie * inputValue1 * inputValue2;
+    const areaResult = parseFloat(pie * inputValue1 * inputValue2).toFixed(2);
     return areaResult;
 }
