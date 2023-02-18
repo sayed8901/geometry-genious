@@ -269,3 +269,4 @@ document.getElementById('calculate-ellipsis-area').addEventListener('click', fun
         })
     }
 });
+

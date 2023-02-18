@@ -54,7 +54,17 @@ function areaCalculator2(input1, input2){
     const inputValue1 = getValueFromInputField(input1);
     const inputValue2 = getValueFromInputField(input2);
     const areaResult = parseFloat(inputValue1 * inputValue2).toFixed(2);
-    return areaResult;
+    
+    // data validation
+    if(isNaN(inputValue1) || isNaN(inputValue2)){
+        alert('You can only input in number format.')
+    }
+    else if(inputValue1 <= 0 || inputValue2 <= 0){
+        alert('Negative values are not allowed! You should input more than 0 here.')
+    }
+    else{
+        return areaResult;
+    }
 }
 
 // function: to calculate the area for rectangle or parallelogram
@@ -63,5 +73,15 @@ function areaCalculator3(input1, input2){
     const inputValue2 = getValueFromInputField(input2);
     const pie = Math.PI.toFixed(2);
     const areaResult = parseFloat(pie * inputValue1 * inputValue2).toFixed(2);
-    return areaResult;
+    
+    // data validation
+    if(isNaN(inputValue1) || isNaN(inputValue2)){
+        alert('You can only input in number format.')
+    }
+    else if(inputValue1 <= 0 || inputValue2 <= 0){
+        alert('Negative values are not allowed! You should input more than 0 here.')
+    }
+    else{
+        return areaResult;
+    }
 }
