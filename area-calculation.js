@@ -270,3 +270,10 @@ document.getElementById('calculate-ellipsis-area').addEventListener('click', fun
     }
 });
 
+
+// link attached to blog page
+document.getElementById('blog-page').addEventListener('click', function(){
+    window.location.href = 'blog.html';
+})
+
+

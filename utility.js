@@ -85,3 +85,5 @@ function areaCalculator3(input1, input2){
         return areaResult;
     }
 }
+
+
