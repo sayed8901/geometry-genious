@@ -87,3 +87,13 @@ function areaCalculator3(input1, input2){
 }
 
 
+// creating random colors
+let color = [, "#3C9EE7", "#E7993C", 
+"#E73C99", "#3CE746", "#E7993C"];
+
+const myCards = document.querySelectorAll('.card');
+for (const myCard of myCards){
+    myCard.addEventListener('mouseenter', function(){
+        myCard.style.background = color[Math.floor(Math.random() * color.length)];
+    });
+};
