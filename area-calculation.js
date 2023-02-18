@@ -23,11 +23,21 @@ document.getElementById('calculate-triangle-area').addEventListener('click', fun
             <p>Triangle</p>
             <p>${triangleArea}cm<sup>2</sup></p>
             <button id="" class="bg-sky-600 hover:bg-sky-700 p-2 rounded-lg text-white">Convert to m<sup>2</sup></button>
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <button class='delete-btn'><i class="fa-solid fa-xmark"></i></button>
         </div>
     `;
     // appending it to the parent container
     parent.appendChild(newDiv);
+
+    // to delete newly appended data
+    const deleteItems = document.querySelectorAll('.delete-btn');
+
+    // targeting appended single output by loop
+    for(const deleteSingleItem of deleteItems){
+        deleteSingleItem.addEventListener('click', function(e){
+          e.target.parentNode.parentNode.style.display = 'none';
+        })
+    }
 });
 
 
@@ -53,11 +63,21 @@ document.getElementById('calculate-rectangle-area').addEventListener('click', fu
             <p>Rectangle</p>
             <p>${rectangleArea}cm<sup>2</sup></p>
             <button id="" class="bg-sky-600 hover:bg-sky-700 p-2 rounded-lg text-white">Convert to m<sup>2</sup></button>
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <button class='delete-btn'><i class="fa-solid fa-xmark"></i></button>
         </div>
     `;
     // appending it to the parent container
     parent.appendChild(newDiv);
+
+    // to delete newly appended data
+    const deleteItems = document.querySelectorAll('.delete-btn');
+    
+    // targeting appended single output by loop
+    for(const deleteSingleItem of deleteItems){
+        deleteSingleItem.addEventListener('click', function(e){
+          e.target.parentNode.parentNode.style.display = 'none';
+        })
+    }
 });
 
 
@@ -83,11 +103,21 @@ document.getElementById('calculate-parallelogram-area').addEventListener('click'
             <p>Parallelogram</p>
             <p>${parallelogramArea}cm<sup>2</sup></p>
             <button id="" class="bg-sky-600 hover:bg-sky-700 p-2 rounded-lg text-white">Convert to m<sup>2</sup></button>
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <button class='delete-btn'><i class="fa-solid fa-xmark"></i></button>
         </div>
     `;
     // appending it to the parent container
     parent.appendChild(newDiv);
+
+    // to delete newly appended data
+    const deleteItems = document.querySelectorAll('.delete-btn');
+    
+    // targeting appended single output by loop
+    for(const deleteSingleItem of deleteItems){
+        deleteSingleItem.addEventListener('click', function(e){
+          e.target.parentNode.parentNode.style.display = 'none';
+        })
+    }
 });
 
 
@@ -113,11 +143,21 @@ document.getElementById('calculate-rhombus-area').addEventListener('click', func
             <p>Rhombus</p>
             <p>${rhombusArea}cm<sup>2</sup></p>
             <button id="" class="bg-sky-600 hover:bg-sky-700 p-2 rounded-lg text-white">Convert to m<sup>2</sup></button>
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <button class='delete-btn'><i class="fa-solid fa-xmark"></i></button>
         </div>
     `;
     // appending it to the parent container
     parent.appendChild(newDiv);
+
+    // to delete newly appended data
+    const deleteItems = document.querySelectorAll('.delete-btn');
+    
+    // targeting appended single output by loop
+    for(const deleteSingleItem of deleteItems){
+        deleteSingleItem.addEventListener('click', function(e){
+          e.target.parentNode.parentNode.style.display = 'none';
+        })
+    }
 });
 
 
@@ -143,11 +183,21 @@ document.getElementById('calculate-pentagon-area').addEventListener('click', fun
             <p>Pentagon</p>
             <p>${pentagonArea}cm<sup>2</sup></p>
             <button id="" class="bg-sky-600 hover:bg-sky-700 p-2 rounded-lg text-white">Convert to m<sup>2</sup></button>
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <button class='delete-btn'><i class="fa-solid fa-xmark"></i></button>
         </div>
     `;
     // appending it to the parent container
     parent.appendChild(newDiv);
+
+    // to delete newly appended data
+    const deleteItems = document.querySelectorAll('.delete-btn');
+    
+    // targeting appended single output by loop
+    for(const deleteSingleItem of deleteItems){
+        deleteSingleItem.addEventListener('click', function(e){
+          e.target.parentNode.parentNode.style.display = 'none';
+        })
+    }
 });
 
 
@@ -173,9 +223,19 @@ document.getElementById('calculate-ellipsis-area').addEventListener('click', fun
             <p>Ellipsis</p>
             <p>${ellipsisArea}cm<sup>2</sup></p>
             <button id="" class="bg-sky-600 hover:bg-sky-700 p-2 rounded-lg text-white">Convert to m<sup>2</sup></button>
-            <button><i class="fa-solid fa-xmark"></i></button>
+            <button class='delete-btn'><i class="fa-solid fa-xmark"></i></button>
         </div>
     `;
     // appending it to the parent container
     parent.appendChild(newDiv);
+
+    // to delete newly appended data
+    const deleteItems = document.querySelectorAll('.delete-btn');
+    
+    // targeting appended single output by loop
+    for(const deleteSingleItem of deleteItems){
+        deleteSingleItem.addEventListener('click', function(e){
+          e.target.parentNode.parentNode.style.display = 'none';
+        })
+    }
 });
