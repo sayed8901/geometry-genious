@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Geometry genius</title>
+
+    <!-- tailwind css -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/8bae764387.js" crossorigin="anonymous"></script>
+</head>
+
+<body class="mx-2 sm:mx-8">
+    <!-- header section -->
+    <header class="flex justify-between bg-sky-100 rounded-lg px-6 py-4 my-4 mx-4 sm:mx-0">
+        <div>
+            <h1 class="text-3xl font-bold">Interactive</h1>
+            <h2 class="text-xl">Geometry Genius</h2>
+        </div>
+        <button id="" class="bg-sky-600 hover:bg-sky-700 px-8 py-2 rounded-lg text-white font-medium self-center">Blog</button>
+    </header>
+
+    <!-- main section -->
+    <main class="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-4 gap-4 py-2">
+
+        <!-- cards -->
+
+        <div class="sm:col-span-2 lg:col-span-3 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-2 py-2">
+
+            <!-- Triangle -->
+            <div class="border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
+                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/triangle.png" alt="">
+                <h3 class="text-xl font-extrabold">Triangle</h3>
+                <div>
+                    <p class="inline mr-2">Area (A) = 0.5 × 
+                        <span id="triangle-formula-text-1">b</span> × 
+                        <span id="triangle-formula-text-2">h</span></p>
+                    <button onclick= "active('triangle-input-1', 'triangle-input-2')"><i class="fa-regular fa-pen-to-square text-xl" title="Click to active input fields below!"></i></button>
+                </div>
+                <div class="flex gap-2 my-8">
+                    <input type="text" name="" id="triangle-input-1" placeholder="b" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center">cm</p>
+                    <input type="text" name="" id="triangle-input-2" placeholder="h" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center mr-2">cm</p>
+                    <button 
+                    onclick="updateFormulaText('triangle-formula-text-1', 'triangle-input-1', 'triangle-formula-text-2', 'triangle-input-2')"
+                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                </div>
+                <button id="calculate-triangle-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+            </div>
+
+            <!-- Rectangle -->
+            <div class="border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
+                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/rectangle.png" alt="">
+                <h3 class="text-xl font-extrabold">Rectangle</h3>
+                <div>
+                    <p class="inline mr-2">Area (A) = 0.5 × 
+                        <span id="rectangle-formula-text-1">W</span> × 
+                        <span id="rectangle-formula-text-2">I</span></p>
+                    <button onclick= "active('rectangle-input-1', 'rectangle-input-2')"><i class="fa-regular fa-pen-to-square text-xl" title="Click to active input fields below!"></i></button>
+                </div>
+                <div class="flex gap-2 my-8">
+                    <input type="text" name="" id="rectangle-input-1" placeholder="W" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center">cm</p>
+                    <input type="text" name="" id="rectangle-input-2" placeholder="I" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center mr-2">cm</p>
+                    <button 
+                    onclick="updateFormulaText('rectangle-formula-text-1', 'rectangle-input-1', 'rectangle-formula-text-2', 'rectangle-input-2')"
+                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                </div>
+                <button id="calculate-rectangle-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+            </div>
+
+            <!-- Parallelogram -->
+            <div class="border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
+                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/parallelogram.png" alt="">
+                <h3 class="text-xl font-extrabold">Parallelogram</h3>
+                <div>
+                    <p class="inline mr-2">Area (A) =
+                        <span id="parallelogram-formula-text-1">b</span> × 
+                        <span id="parallelogram-formula-text-2">h</span></p>
+                    <button onclick= "active('parallelogram-input-1', 'parallelogram-input-2')"><i class="fa-regular fa-pen-to-square text-xl" title="Click to active input fields below!"></i></button>
+                </div>
+                <div class="flex gap-2 my-8">
+                    <input type="text" name="" id="parallelogram-input-1" placeholder="b" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center">cm</p>
+                    <input type="text" name="" id="parallelogram-input-2" placeholder="h" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center mr-2">cm</p>
+                    <button 
+                    onclick="updateFormulaText('parallelogram-formula-text-1', 'parallelogram-input-1', 'parallelogram-formula-text-2', 'parallelogram-input-2')"
+                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                </div>
+                <button id="calculate-parallelogram-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+            </div>
+
+            <!-- Rhombus -->
+            <div class="border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
+                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/rhombus.png" alt="">
+                <h3 class="text-xl font-extrabold">Rhombus</h3>
+                <div>
+                    <p class="inline mr-2">Area (A) = 0.5 × 
+                        <span id="rhombus-formula-text-1">d<sub>1</sub></span> × 
+                        <span id="rhombus-formula-text-2">d<sub>2</sub></span></p>
+                    <button onclick= "active('rhombus-input-1', 'rhombus-input-2')"><i class="fa-regular fa-pen-to-square text-xl" title="Click to active input fields below!"></i></button>
+                </div>
+                <div class="flex gap-2 my-8">
+                    <input type="text" name="" id="rhombus-input-1" placeholder="d1" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center">cm</p>
+                    <input type="text" name="" id="rhombus-input-2" placeholder="d2" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center mr-2">cm</p>
+                    <button 
+                    onclick="updateFormulaText('rhombus-formula-text-1', 'rhombus-input-1', 'rhombus-formula-text-2', 'rhombus-input-2')"
+                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                </div>
+                <button id="calculate-rhombus-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+            </div>
+
+            <!-- Pentagon -->
+            <div class="border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
+                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/pentagon.png" alt="">
+                <h3 class="text-xl font-extrabold">Pentagon</h3>
+                <div>
+                    <p class="inline mr-2">Area (A) = 0.5 × 
+                        <span id="pentagon-formula-text-1">p</span> × 
+                        <span id="pentagon-formula-text-2">b</span></p>
+                    <button onclick= "active('pentagon-input-1', 'pentagon-input-2')"><i class="fa-regular fa-pen-to-square text-xl" title="Click to active input fields below!"></i></button>
+                </div>
+                <div class="flex gap-2 my-8">
+                    <input type="text" name="" id="pentagon-input-1" placeholder="p" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center">cm</p>
+                    <input type="text" name="" id="pentagon-input-2" placeholder="b" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center mr-2">cm</p>
+                    <button 
+                    onclick="updateFormulaText('pentagon-formula-text-1', 'pentagon-input-1', 'pentagon-formula-text-2', 'pentagon-input-2')"
+                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                </div>
+                <button id="calculate-pentagon-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+            </div>
+
+            <!-- Ellipsis -->
+            <div class="border shadow-xl text-center px-4 py-8 rounded-lg mx-4 sm:mx-0">
+                <img class="mx-auto pb-3 px-8 h-32 mb-4" src="images/triangle.png" alt="">
+                <h3 class="text-xl font-extrabold">Ellipsis</h3>
+                <div>
+                    <p class="inline mr-2">Area (A) = <span class="text-xl">π</span>
+                        <span id="ellipsis-formula-text-1">a</span>
+                        <span id="ellipsis-formula-text-2">b</span></p>
+                    <button onclick= "active('ellipsis-input-1', 'ellipsis-input-2')"><i class="fa-regular fa-pen-to-square text-xl" title="Click to active input fields below!"></i></button>
+                </div>
+                <div class="flex gap-2 my-8">
+                    <input type="text" name="" id="ellipsis-input-1" placeholder="a" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center">cm</p>
+                    <input type="text" name="" id="ellipsis-input-2" placeholder="b" class="bg-slate-100 w-2/6 rounded px-2 py-1" disabled>
+                    <p class="self-center mr-2">cm</p>
+                    <button 
+                    onclick="updateFormulaText('ellipsis-formula-text-1', 'ellipsis-input-1', 'ellipsis-formula-text-2', 'ellipsis-input-2')"
+                    ><i class="fa-regular fa-square-check self-center text-2xl"></i></button>
+                </div>
+                <button id="calculate-ellipsis-area" class="bg-sky-600 hover:bg-sky-700 w-full py-2 rounded-lg text-white font-medium">Calculate</button>
+            </div>
+        </div>
+            
+        <!-- calculation side -->
+        <aside id="container" class="border shadow-xl text-center px-4 py-8 rounded-lg mt-2 sm:mx-0 mx-auto h-3/4">
+            <h3 class="text-xl font-extrabold underline mb-4">Area Calculation</h3>
+            <!-- <div class="flex gap-2 justify-around items-center text-sm my-2">
+                <p>1.</p>
+                <p>Triangle</p>
+                <p>12cm<sup>2</sup></p>
+                <button id="" class="bg-sky-600 hover:bg-sky-700 p-2 rounded-lg text-white">Convert to m<sup>2</sup></button>
+                <button><i class="fa-solid fa-xmark"></i></button>
+            </div> -->
+        </aside>
+    </main>
+
+    <!-- js files -->
+    <script src="utility.js"></script>
+    <script src="area-calculation.js"></script>
+</body>
+</html>
